@@ -3,18 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <title>title</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-    #grad1 {
-    height: 600px;
-    background: red; /* For browsers that do not support gradients */
-    background: linear-gradient(to bottom right, blue, pink); /* Standard syntax (must be last) */
+    body {
+    height:700px;
+    background: linear-gradient(to bottom right, blue, purple);
     }
+    #square {
+	  width: 100px;
+	  height: 100px;
+	  background: white;
+    }
+    div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    }
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+    }
+
+    /* Standard syntax */
+    @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+    }
+
 </style>
   </head>
   <body>
-  <div id="grad1">
-      <h1>Nathan Lei</h1>
-      
-      </div>
+      <center><h1>Nathan Lei</h1></center>
+      <center><h2>Hobbies</h2></center>
   </body>
+  <div></div>
 </html>

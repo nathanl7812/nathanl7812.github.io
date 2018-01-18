@@ -35,6 +35,23 @@
 /*}*/
 
 h1{
-  color:red;
-  margin-right: auto;
+  color:white;
+  text-shadow: 2px 2px pink;
+}
+h2{
+  color:white;
+  margin-top: 100px;
+}
+/*box{*/
+/*  width:100px;*/
+/*  height:100px;*/
+/*  color:black;*/
+/*}*/
+#square {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+#square{
+  margin-left: 100px;
 }
